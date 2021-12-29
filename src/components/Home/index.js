@@ -4,7 +4,13 @@ import "./styles.css";
 function Home() {
     return (
         <div>
-            <h1>Home Page</h1>
+            <p className="report">Report for</p>
+            <h1 className="name">Natalie Lopez</h1>
+            <ul className="days">
+                <li>Daily</li>
+                <li>Weekly</li>
+                <li>Monthly</li>
+            </ul>
         </div>
     )
 }
