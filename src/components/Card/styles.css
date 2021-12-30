@@ -42,7 +42,7 @@
 
 .name {
     font-family: 'Raleway', sans-serif;
-    font-size: clamp(1.2rem, 1.3vw, 1.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
     font-weight: bold;
     margin-top: -10px;
 }
@@ -64,4 +64,40 @@
     font-size: clamp(0.85rem, 1vw, 1rem);
     padding: 15px;
     opacity: 0.7;
+}
+
+@media all and (max-width: 600px){
+	.card-container {
+        width: 230px;
+        height: 150px;
+    }
+
+    .card-info {
+        width: 230px;
+        height: 100px;
+    }
+
+    .description {
+        width: 230px;
+    }
+
+    .photo {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .mobile-description {
+        margin-left: 70px;
+        margin-top: -60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .days {
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
