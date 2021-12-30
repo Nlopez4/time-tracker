@@ -7,7 +7,7 @@
 
 .full-container {
     width: 250px;
-    max-height: 200px;
+    max-height: 150px;
     border-radius: 15px;
     background-color: orange;
 }
