@@ -1,16 +1,12 @@
 import React from "react";
 import "./styles.css";
+import Card from "../../components/Card";
 
+// Home will contain the entire page of main card and cards
 function Home() {
     return (
         <div>
-            <p className="report">Report for</p>
-            <h1 className="name">Natalie Lopez</h1>
-            <ul className="days">
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
-            </ul>
+            <Card />
         </div>
     )
 }
