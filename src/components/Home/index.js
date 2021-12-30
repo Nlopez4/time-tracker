@@ -6,7 +6,7 @@ import Cards from "../../components/Cards";
 // Home will contain the entire page of main card and cards
 function Home() {
     return (
-        <div>
+        <div className="home-container">
             <Card />
             <Cards />
         </div>
