@@ -21,11 +21,20 @@
     padding-left: 10px; 
     padding: 10px;
     margin-top: 40px;
+    padding-left: 30px;
+    
 }
 
-.cards-title, .hours {
+.cards-title {
     font-size: var(--main-font-size);
     font-family: var(--main-font-family);
 }
 
+.hours {
+    font-size: var(--big-font-size);
+    font-family: var(--main-font-family);
+}
 
+.past-p {
+    opacity: var(--main-opacity);
+}
