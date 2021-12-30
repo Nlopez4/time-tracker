@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import { MoreHorizontal } from 'react-feather';
 
 
 
@@ -8,7 +9,10 @@ function Cards() {
         <div className="cards-container">
             <div className="full-container">
                 <div className="work-info">
-                    <p className="cards-title">Work</p>
+                        <div className="menu-dot">
+                            <MoreHorizontal />
+                        </div>
+                        <p className="cards-title">Work</p>
                     <h1 className="hours">32hrs</h1>
                     <p className="past-p">Last Week: 30hrs</p>
                 </div>

@@ -7,13 +7,17 @@
 
 .full-container {
     width: 250px;
-    height: 200px;
+    max-height: 200px;
     border-radius: 15px;
     background-color: orange;
 }
 
+.menu-dot {
+    margin-inline-start: 80%;
+}
+
 .work-info {
-    height: 150px;
+    max-height: 150px;
     border-radius: 15px;
     background-color: #000099;
     padding-left: 10px; 
@@ -24,6 +28,7 @@
 }
 
 .cards-title {
+    margin-top: -20px;
     font-size: var(--main-font-size);
     font-family: var(--main-font-family);
 }
@@ -35,6 +40,24 @@
 }
 
 .past-p {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     opacity: var(--main-opacity);
+}
+
+
+@media all and (max-width: 600px){
+	.full-container {
+        width: 230px;
+        height: 150px;
+    }
+
+    .work-info {
+        height: 100px;
+    }
+
+    .past-p {
+        font-size: 12px;
+        margin-inline-start: 50%;
+        margin-top: -35px;
+    }
 }
