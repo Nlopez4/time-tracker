@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cutive+Mono&family=Dancing+Script:wght@600&family=Josefin+Sans:wght@100&family=Jost&family=Lato&family=Lobster&family=Maitree:wght@200&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Orbitron:wght@700&family=Pacifico&family=Philosopher&family=Play&family=Playfair+Display:wght@400;500&family=Poppins:wght@500&family=Press+Start+2P&family=Pushster&family=Quicksand&family=Raleway:wght@100&family=Roboto:wght@300&family=Urbanist:wght@500;600&display=swap');
 
 html {
+  margin: 0;
   padding: 0; 
+  background-color: #000033; 
+  color: white;
 }
 
 :root {
-  margin: 0;
-  background-color: #000033; 
-  color: white;
-  font-family: 'Lato', sans-serif;
+  --main-font-family: 'Lato', sans-serif;
+  --main-font-size: font-size: clamp(0.85rem, 1vw, 1rem);
 }
 
 /* code {
