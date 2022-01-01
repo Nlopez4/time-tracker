@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6J7qeJThWZ2Mlqd7YkdNPqrXMF-3GOAM",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "time-tracker-46a65.firebaseapp.com",
   projectId: "time-tracker-46a65",
   storageBucket: "time-tracker-46a65.appspot.com",
