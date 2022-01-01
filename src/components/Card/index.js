@@ -5,8 +5,8 @@ import "./styles.css";
 function Card() {
     return (
         <div className="card-container">
-            <div class="card-info">
-                <div class="description">
+            <div className="card-info">
+                <div className="description">
                     <div className="mobile-img">
                         <img className="photo" src={process.env.PUBLIC_URL + '/images/portfolio.jpg'} />
                     </div>
