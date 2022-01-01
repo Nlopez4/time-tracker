@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from "./components/Home";
+// import firebase from './models';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

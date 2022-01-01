@@ -8,7 +8,7 @@ function Card() {
             <div className="card-info">
                 <div className="description">
                     <div className="mobile-img">
-                        <img className="photo" src={process.env.PUBLIC_URL + '/images/portfolio.jpg'} />
+                        <img className="photo" src={process.env.PUBLIC_URL + '/images/portfolio.jpg'} alt="portfolio"/>
                     </div>
                     <div className="mobile-description">
                         <p className="report">Report for</p>
