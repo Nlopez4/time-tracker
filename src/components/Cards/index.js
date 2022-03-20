@@ -1,10 +1,22 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "./styles.css";
 import { MoreHorizontal } from 'react-feather';
 
-
-
 function Cards() {
+    const [jsonData, setJsonData] = useState([]);
+
+    useEffect(() => {
+        getData();
+    }, []); // render once
+
+    const getData = async() => {
+        const response = await fetch('./data.json')
+        const json = await response.json();
+        setJsonData(json);
+        console.log(json)
+    }
+
+   
     return (
         <div className="cards-container">
             <div className="full-container">
