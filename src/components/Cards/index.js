@@ -13,24 +13,30 @@ function Cards() {
         const response = await fetch('./data.json')
         const json = await response.json();
         setJsonData(json);
-        console.log(json)
+        console.log(jsonData)
     }
 
-   
     return (
         <div className="cards-container">
             <div className="full-container">
                 <div className="work-info">
-                        <div className="menu-dot">
-                            <MoreHorizontal />
-                        </div>
-                        <p className="cards-title">Work</p>
+                    <div className="menu-dot">
+                        <MoreHorizontal />
+                    </div>
+                    {jsonData && jsonData.map(data => {
+                        return(
+                            <div key={data.title}>
+                                <h1 className="hours">{data.title}</h1>
+                            </div>
+                        )
+                    })}
+                    {/* Saved for later */}
+                    {/* <p className="cards-title">Work</p>
                     <h1 className="hours">32hrs</h1>
-                    <p className="past-p">Last Week: 30hrs</p>
+                    <p className="past-p">Last Week: 30hrs</p> */}
                 </div>
             </div>
         </div>
     )
 }
-
 export default Cards; 
