@@ -27,12 +27,11 @@ return (
                             <MoreHorizontal />
                             <h1 className="hours">{data.title}</h1>
                         </div>
-                
                     </div>
                 </div>
-        </div>
-            )
-        })}
+            </div>
+        )
+    })}
     </div>
     )
 }
