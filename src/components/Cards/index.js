@@ -18,7 +18,7 @@ function Cards() {
 
 return (
     <div>
-    {jsonData && jsonData.map(data => {
+    {jsonData.map((data) => {
         return(
             <div key={data.title} className="cards-container">
                 <div className="full-container">
@@ -26,6 +26,9 @@ return (
                         <div className="menu-dot">
                             <MoreHorizontal />
                             <h1 className="hours">{data.title}</h1>
+                            <p>{data.timeframes.daily.current}</p>
+                            <p>{data.timeframes.weekly.current}</p>
+                            <p>{data.timeframes.monthly.current}</p>
                         </div>
                     </div>
                 </div>
