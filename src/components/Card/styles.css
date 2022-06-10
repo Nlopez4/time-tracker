@@ -56,6 +56,10 @@
     opacity: var(--main-opacity);
 }
 
+li {
+    cursor: pointer;
+}
+
 @media all and (max-width: 600px){
 	.card-container {
         width: 230px;
