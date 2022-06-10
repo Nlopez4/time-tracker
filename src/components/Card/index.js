@@ -3,6 +3,12 @@ import "./styles.css";
 
 
 function Card() {
+
+    const renderHours = () => {
+        // if daily, weekly, or monthly is clicked, render those hours
+    } 
+
+
     return (
         <div className="card-container">
             <div className="card-info">
