@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import "./styles.css";
 import { MoreHorizontal } from 'react-feather';
@@ -13,7 +14,6 @@ function Cards() {
         const response = await fetch('./data.json')
         const json = await response.json();
         setJsonData(json);
-        console.log(jsonData)
     }
 
 return (
